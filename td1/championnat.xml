@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<championnat>
+   <clubs>
+      <club id="LOSC">
+         <nom>LOSC Lille Metropole</nom>
+         <ville>Lille</ville>
+      </club>
+      <club id="SRFC">
+         <nom>Stade Rennais FC</nom>
+         <ville>Rennes</ville>
+      </club>
+      <club id="OL">
+         <nom>Olympique Lyonnais</nom>
+         <ville>Lyon</ville>
+      </club>
+      <club id="OM">
+         <nom>Olympique de Marseille</nom>
+         <ville>Marseille</ville>
+      </club>
+      <club id="PSG">
+         <nom>Paris Saint-Germain</nom>
+         <ville>Paris</ville>
+      </club>
+      <club id="MHSC">
+         <nom>Montpellier Herault SC</nom>
+         <ville>Montpellier</ville>
+      </club>
+      <club id="ASSE">
+         <nom>AS Saint-Etienne</nom>
+         <ville>Saint Etienne</ville>
+      </club>
+      <club id="GB">
+         <nom>Girondins de Bordeaux</nom>
+         <ville>Bordeaux</ville>
+      </club>
+      <club id="FCL">
+         <nom>FC Lorient</nom>
+         <ville>Lorient</ville>
+      </club>
+      <club id="ACA">
+         <nom>AC Ajaccio</nom>
+         <ville>Ajaccio</ville>
+      </club>
+      <club id="FCSM">
+         <nom>FC de Sochaux Montbéliard</nom>
+         <ville>Sochaux</ville>
+      </club>
+      <club id="ASMFC">
+         <nom>AS Monaco FC</nom>
+         <ville>Monaco</ville>
+      </club>
+      <club id="OGCN">
+         <nom>OGC Nice</nom>
+         <ville>Nice</ville>
+      </club>
+      <club id="VAFC">
+         <nom>Valenciennes FC</nom>
+         <ville>Valenciennes</ville>
+      </club>
+      <club id="SR">
+         <nom>Stade de Reims</nom>
+         <ville>Reims</ville>
+      </club>
+      <club id="SCB">
+         <nom>SC Bastia</nom>
+         <ville>Bastia</ville>
+      </club>
+      <club id="ETGFC">
+         <nom>Evian TG FC</nom>
+         <ville>Evian</ville>
+      </club>
+      <club id="EAG">
+         <nom>EA Guingamp</nom>
+         <ville>Guingamp</ville>
+      </club>
+      <club id="TFC">
+         <nom>Toulouse FC</nom>
+         <ville>Toulouse</ville>
+      </club>
+      <club id="FCN">
+         <nom>FC Nantes</nom>
+         <ville>Nantes</ville>
+      </club>
+   </clubs>
+   <journees>
+      <journee num="1">
+         <date>2013-08-10</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+      </journee>
+      <journee num="2">
+         <date>2013-08-17</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>4 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+      </journee>
+      <journee num="3">
+         <date>2013-08-24</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+      </journee>
+      <journee num="4">
+         <date>2013-08-31</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+      </journee>
+      <journee num="5">
+         <date>2013-09-14</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>2 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+      </journee>
+      <journee num="6">
+         <date>2013-09-21</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>3 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>3 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+      </journee>
+      <journee num="7">
+         <date>2013-09-25</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>5 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+      </journee>
+      <journee num="8">
+         <date>2013-09-28</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+      </journee>
+      <journee num="9">
+         <date>2013-10-05</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>4 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>4 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>5 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+      </journee>
+      <journee num="10">
+         <date>2013-10-19</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>3 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+      </journee>
+      <journee num="11">
+         <date>2013-10-26</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>2 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>0 5</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+      </journee>
+      <journee num="12">
+         <date>2013-11-02</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>4 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+      </journee>
+      <journee num="13">
+         <date>2013-11-09</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>0 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>3 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+      </journee>
+      <journee num="14">
+         <date>2013-11-23</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>0 4</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>0 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+      </journee>
+      <journee num="15">
+         <date>2013-11-30</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>3 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>4 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>5 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+      </journee>
+      <journee num="16">
+         <date>2013-12-04</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>0 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>3 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+      </journee>
+      <journee num="17">
+         <date>2013-12-07</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>5 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+      </journee>
+      <journee num="18">
+         <date>2013-12-14</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>1 3</score>
+         </rencontre>
+      </journee>
+      <journee num="19">
+         <date>2013-12-21</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OM</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASMFC</clubReceveur>
+            <clubInvite>VAFC</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>3 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>2 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>4 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>SRFC</clubInvite>
+            <score>2 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+      </journee>
+      <journee num="20">
+         <date>2014-01-11</date>
+         <rencontre>
+            <clubReceveur>ACA</clubReceveur>
+            <clubInvite>PSG</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>GB</clubReceveur>
+            <clubInvite>TFC</clubInvite>
+            <score>0 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ETGFC</clubReceveur>
+            <clubInvite>OM</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>EAG</clubReceveur>
+            <clubInvite>ASSE</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>LOSC</clubReceveur>
+            <clubInvite>SR</clubInvite>
+            <score>1 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OL</clubReceveur>
+            <clubInvite>FCSM</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>MHSC</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>1 1</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCN</clubReceveur>
+            <clubInvite>FCL</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>OGCN</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>VAFC</clubReceveur>
+            <clubInvite>SCB</clubInvite>
+            <score>3 2</score>
+         </rencontre>
+      </journee>
+      <journee num="21">
+         <date>2014-01-18</date>
+         <rencontre>
+            <clubReceveur>SCB</clubReceveur>
+            <clubInvite>GB</clubInvite>
+            <score>1 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCL</clubReceveur>
+            <clubInvite>EAG</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>OGCN</clubReceveur>
+            <clubInvite>ACA</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>PSG</clubReceveur>
+            <clubInvite>FCN</clubInvite>
+            <score>5 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SR</clubReceveur>
+            <clubInvite>OL</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>SRFC</clubReceveur>
+            <clubInvite>ETGFC</clubInvite>
+            <score>0 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>ASSE</clubReceveur>
+            <clubInvite>LOSC</clubInvite>
+            <score>2 0</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>FCSM</clubReceveur>
+            <clubInvite>MHSC</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+         <rencontre>
+            <clubReceveur>TFC</clubReceveur>
+            <clubInvite>ASMFC</clubInvite>
+            <score>0 2</score>
+         </rencontre>
+      </journee>
+   </journees>
+</championnat>
