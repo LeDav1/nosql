@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE CDlist SYSTEM "cd.dtd">
+
+<CDlist>
+  <CD>
+    <composer>Raymond Domenech</composer>
+    <performance>
+      <composition></composition>
+      <soloist>Thierry Henry</soloist>
+      <orchestra>London Symphony Orchestra</orchestra>
+      <conductor></conductor>
+    </performance>
+    <publisher>Addison Wesley</publisher>
+    <!-- <publisher>Springer</publisher> -->
+    <length>105</length>
+  </CD>
+</CDlist>

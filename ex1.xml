@@ -1,0 +1,17 @@
+<payslist>
+    <pays>
+        <nom_pays>France</nom_pays>
+        <capitale>Paris</capitale>
+        <population>64 102 000 habitants (en 2007)</population>
+    </pays>
+    <pays>
+        <nom_pays>Italie</nom_pays>
+        <capitale>Rome</capitale>
+        <population>58 133 509 habitants (en 2006)</population>
+    </pays>
+    <pays>
+        <nom_pays>Espagne</nom_pays>
+        <capitale>Madrid</capitale>
+        <population>44 708 964 habitants (en 2006)</population>
+    </pays>
+</payslist>

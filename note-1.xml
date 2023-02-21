@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<notes>
+  <note>
+    <to>Destinataire</to>
+    <from>Expéditeur</from>
+    <body>Contenu</body>
+  </note>
+  <note>
+    <to>Abc</to>
+    <from>Test</from>
+    <heading>Heading</heading>
+    <body>Test</body>
+  </note>
+</notes>
