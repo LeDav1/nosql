@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <notes>
   <note>
-    <from>From1</from>
     <to>To1</to>
+    <from>From1</from>
     <body>First body</body>
   </note>
   <note>
@@ -10,11 +10,11 @@
     <from>From2</from>
     <heading>Heading</heading>
     <body>Main body</body>
-    <body>Appendix</body>
+    <!-- <body>Appendix</body> -->
   </note>
-  <notes>
-    <from>From3</from>
+  <note>
     <to>To3</to>
+    <from>From3</from>
     <body>Third body</body>
-  </notes>
+  </note>
 </notes>
