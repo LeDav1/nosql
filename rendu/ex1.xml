@@ -1,0 +1,20 @@
+<payslist>
+    <pays>
+        <nom_pays>France</nom_pays>
+        <capitale>Paris</capitale>
+        <population>64102000</population>
+        <annee>2007</annee>
+    </pays>
+    <pays>
+        <nom_pays>Italie</nom_pays>
+        <capitale>Rome</capitale>
+        <population>5813350</population>
+        <annee>2006</annee>
+    </pays>
+    <pays>
+        <nom_pays>Espagne</nom_pays>
+        <capitale>Madrid</capitale>
+        <population>44708964</population>
+        <annee>2006</annee>
+    </pays>
+</payslist>
