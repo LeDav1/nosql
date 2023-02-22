@@ -16,6 +16,13 @@
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:simpleType name="journeeAttrType">
+    		<xs:restriction base="xs:integer">
+      			<xs:minInclusive value="1"/>
+      			<xs:maxInclusive value="38"/>
+    		</xs:restriction>
+  	</xs:simpleType>
+
 	<xs:complexType name="rencontreType">
 		<xs:sequence>
 			<xs:element name="clubReceveur" type="xs:string"/>
@@ -30,7 +37,7 @@
 			<xs:element name="date" type="xs:date"/>
 			<xs:element name="rencontre" type="rencontreType" maxOccurs='10'/>
 		</xs:sequence>
-		<xs:attribute name="num" type="xs:integer"/>
+		<xs:attribute name="num" type="journeeAttrType"/>
 	</xs:complexType>
 
 	<xs:complexType name="clubsType">
