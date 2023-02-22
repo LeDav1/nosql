@@ -27,7 +27,7 @@
 				
 	<xs:complexType name="journeeType">
 		<xs:sequence>
-			<xs:element name="date" type="xs:string"/>
+			<xs:element name="date" type="xs:date"/>
 			<xs:element name="rencontre" type="rencontreType" maxOccurs='10'/>
 		</xs:sequence>
 		<xs:attribute name="num" type="xs:integer"/>
@@ -36,10 +36,6 @@
 	<xs:complexType name="clubsType">
 		<xs:sequence>
 			<xs:element name="club" type="clubType" minOccurs='20' maxOccurs='20'/>
-			<xs:key name="clubKey">
-				<xs:selector xpath="club"/>
-				<xs:field xpath="id"/>
-			</xs:key>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -57,7 +53,23 @@
 	</xs:complexType>
 
 	<xs:element name="championnat" type="championnatType">
-		
-	</xs:element>
+    <xs:key name="cleclub">
+      <xs:selector xpath="clubs/club"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:keyref name="clubref" refer="cleclub">
+      <xs:selector xpath="journees/journee/rencontre"/>
+      <xs:field xpath="clubReceveur"/>
+    </xs:keyref>
+    <xs:keyref name="clubref2" refer="cleclub">
+      <xs:selector xpath="journees/journee/rencontre"/>
+      <xs:field xpath="clubInvite"/>
+    </xs:keyref>
+    <xs:key name="clejournee">
+        <xs:selector xpath="journees/journee"/>
+        <xs:field xpath="@num"/>
+    </xs:key>    
+    </xs:element>
+    
 		
 </xs:schema>
