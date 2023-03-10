@@ -1,0 +1,20 @@
+PREFIX instance: <http://www.inria.fr/2007/09/11/humans.rdfs-instances#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+select ?person ?pointure ?shirtsize where
+{
+	{
+        ?person rdf:type humans:Person .
+        ?person humans:shoesize ?pointure .
+	FILTER (xsd:integer(?pointure) > 8)
+	}
+	UNION
+	{
+	?person rdf:type humans:Person .
+	?person humans:shirtsize ?shirtsize .
+	FILTER (xsd:integer(?shirtsize) > 12)
+	} 
+}

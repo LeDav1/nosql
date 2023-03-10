@@ -1,0 +1,22 @@
+@prefix humans:   <http://www.inria.fr/2007/09/11/humans.rdfs#> .
+@prefix instance: <http://www.inria.fr/2007/09/11/humans.rdfs-instances#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+instance:Jack  humans:hasFriend  instance:Alice .
+
+instance:Sophie  humans:hasFriend  instance:Karl .
+
+instance:Eve  humans:hasFriend  instance:Alice .
+
+instance:Karl  humans:hasFriend  instance:Sophie .
+
+instance:John  humans:hasFriend  instance:Alice .
+
+instance:David  humans:hasFriend  instance:Gaston .
+
+instance:Gaston  humans:hasFriend  instance:David .
+
+instance:Alice  humans:hasFriend  instance:John , instance:Eve , instance:Jack , instance:Laura .
+
+instance:Laura  humans:hasFriend  instance:Alice .

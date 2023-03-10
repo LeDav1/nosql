@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix humans: <http://www.inria.fr/2007/09/11/humans.rdfs#> .
+@prefix instance: <http://www.inria.fr/2007/09/11/humans.rdfs-instances#> .
+
+instance:Harry
+  rdf:type humans:Man ;
+  humans:name "Harry" ;
+  humans:hasChild instance:John ;
+  humans:hasSpouse instance:Sophie .
+
+instance:John
+  rdf:type humans:Person ;
+  humans:name "John" ;
+  humans:shoesize "14" ;
+  humans:age "37" ;
+  humans:shirtsize "12" ;
+  humans:trouserssize "44" ;
+  humans:hasParent instance:Sophie .
+
+instance:Mark
+  rdf:type humans:Person ;
+  humans:name "Mark" ;
+  humans:shoesize "8" ;
+  humans:age "14" ;
+  humans:shirtsize "9" ;
+  humans:trouserssize "36" ;
+  humans:hasFather instance:John .
+
+instance:Eve
+  rdf:type humans:Person, humans:Lecturer ;
+  humans:hasSpouse instance:David ;
+  humans:name "Eve" ;
+  humans:hasFriend instance:Alice .
+
+instance:David
+  rdf:type humans:Person, humans:Researcher ;
+  humans:hasFriend instance:Gaston ;
+  humans:name "David" .
+
+instance:Alice
+  rdf:type humans:Woman ;
+  humans:hasFriend instance:John ;
+  humans:name "Alice" .
+
+instance:Jack
+  rdf:type humans:Man ;
+  humans:hasFriend instance:Alice ;
+  humans:hasChild instance:Harry ;
+  humans:name "Jack" .
+
+instance:Flora
+  rdf:type humans:Woman ;
+  humans:age "95" ;
+  humans:hasSpouse instance:Gaston ;
+  humans:hasChild instance:Pierre ;
+  humans:name "Flora" .
+
+instance:Laura
+  rdf:type humans:Person, humans:Lecturer, humans:Researcher ;
+  humans:hasFriend instance:Alice ;
+  humans:name "Laura" .
+
+instance:Jennifer
+  rdf:type humans:Woman ;
+  humans:hasSpouse instance:John ;
+  humans:name "Jennifer" .
+
+instance:Lucas
+  rdf:type humans:Man ;
+  humans:shoesize "7" ;
+  humans:trouserssize "28" ;
+  humans:age "12" ;
+  humans:shirtsize "8" ;
+  humans:name "Lucas" ;
+  humans:hasMother instance:Catherine .
+
+instance:Gaston
+  rdf:type humans:Man, humans:Researcher ;
+  humans:shoesize "11" ;
+  humans:trouserssize "38" ;
+  humans:age "102" ;
+  humans:shirtsize "12" ;
+  humans:name "Gaston" ;
+  humans:hasChild instance:Pierre, instance:Jack .
+
+instance:William
+  rdf:type humans:Person ;
+  humans:hasSpouse instance:Laura ;
+  humans:shoesize "10" ;
+  humans:age "42" ;
+  humans:trouserssize "46" ;
+  humans:shirtsize "13" ;
+  humans:name "William" .
+
+instance:Pierre
+  rdf:type humans:Man ;
+  humans:shoesize "8" ;
+  humans:age "71" ;
+  humans:trouserssize "30" ;
+  humans:shirtsize "9" ;
+  humans:name "Pierre" .
+
+instance:Karl
+  rdf:type humans:Person ;
+  humans:hasSpouse instance:Catherine ;
+  humans:hasFriend instance:Sophie ;
+  humans:shoesize "7" ;
+  humans:age "36" ;
+  humans:shirtsize "9" ;
+  humans:trouserssize "40" .
+
+instance:Catherine
+  rdf:type humans:Woman ;
+  humans:hasMother instance:Laura .

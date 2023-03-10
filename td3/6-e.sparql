@@ -1,0 +1,14 @@
+PREFIX instance: <http://www.inria.fr/2007/09/11/humans.rdfs-instances#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+select ?parent ?spouse ?child where
+{
+        ?parent rdf:type humans:Woman .
+        ?parent humans:hasSpouse ?spouse .
+	OPTIONAL {?parent humans:hasChild ?child}
+}
+
+

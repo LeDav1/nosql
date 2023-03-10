@@ -1,0 +1,14 @@
+PREFIX instance: <http://www.inria.fr/2007/09/11/humans.rdfs-instances#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+select ?person1 ?person2 where
+{
+        ?person1 rdf:type ?t2 .
+        ?person2 rdf:type ?t1 .
+	?person1 humans:shirtsize ?shirtsize .
+	?person2 humans:shirtsize ?shirtsize .
+	FILTER (?person1 != ?person2)
+}
