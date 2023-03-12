@@ -1,0 +1,9 @@
+mkdir tworound 2> /dev/null
+rm tworound/out1.txt 2> /dev/null
+rm -r out/
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input sujet-mapreduce-fichiers/input-matmul/ -output out -mapper td4/tworound-map1.py -reducer td4/tworound-reduce1.py
+cat out/* > tworound/out1.txt
+rm -r out/
+cat tworound/*
+bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input tworound/ -output out -mapper td4/tworound-map2.py -reducer td4/tworound-reduce2.py
+cat out/*

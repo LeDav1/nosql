@@ -14,7 +14,7 @@ previous_value = None
 
 for line in sys.stdin:
     
-    j ,matrix_index, i_or_k, value = line.rstrip().split(", ") # j, (M, i, mij) or (N, k, nkj) as stated in mmds
+    j ,matrix_index, i_or_k, value = line.rstrip().split(" ") # j, (M, i, mij) or (N, k, nkj) as stated in mmds
 
     if j == previous_j or not previous_j:                   # If j is the same as previous j
         reduce_list.append((matrix_index, i_or_k, value))   # Form a new sublist, which is a group of lines sharing the same j
@@ -23,7 +23,7 @@ for line in sys.stdin:
         while reduce_list:
             if delta < len(reduce_list):
                 if reduce_list[0][MATRIX_NAME] != reduce_list[delta][MATRIX_NAME]:      # If the matrix_name is different, print the combination
-                    print(f"{reduce_list[0][I_OR_K]}\t{reduce_list[delta][I_OR_K]}\t{int(reduce_list[0][VALUE]) * int(reduce_list[delta][VALUE])}")
+                    print(f"{reduce_list[0][I_OR_K]} {reduce_list[delta][I_OR_K]} {int(reduce_list[0][VALUE]) * int(reduce_list[delta][VALUE])}")
                 delta += 1
             else: 
                 reduce_list.pop(0)                      # Remove the first element in the list, for which we have already printed all the possible combinations
@@ -40,7 +40,7 @@ delta = 1
 while reduce_list:
     if delta < len(reduce_list):
         if reduce_list[0][MATRIX_NAME] != reduce_list[delta][MATRIX_NAME]:
-            print(f"{reduce_list[0][I_OR_K]}\t{reduce_list[delta][I_OR_K]}\t{int(reduce_list[0][VALUE]) * int(reduce_list[delta][VALUE])}")
+            print(f"{reduce_list[0][I_OR_K]} {reduce_list[delta][I_OR_K]} {int(reduce_list[0][VALUE]) * int(reduce_list[delta][VALUE])}")
         delta += 1
     else: 
         reduce_list.pop(0)

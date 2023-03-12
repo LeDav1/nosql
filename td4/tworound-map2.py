@@ -1,9 +1,10 @@
+#!/usr/bin/env python3
 import sys
 
 for line in sys.stdin:
 
-    i, k, value = line.strip().split('\t')
+    i, k, value = line.strip().split(' ')
 
-    print(f"{i}\t{k}\t{value}")
+    print(f"{i} {k} {value}")
 
 

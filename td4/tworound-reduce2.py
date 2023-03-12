@@ -1,7 +1,7 @@
+#!/usr/bin/env python3
 import sys
 
-
-def calculate_value_from_list(reduce_list):
+def calculate_value_from_list(reduce_list, prev_group):
     i = 0
     result = 0
     while i < len(reduce_list) - 1:
@@ -20,7 +20,7 @@ prev_group = None
 
 for line in sys.stdin:
 
-    i, k, value = line.strip().split('\t')
+    i, k, value = line.strip().split(' ')
 
     value = int(value)
     group = (i,k)
@@ -29,9 +29,9 @@ for line in sys.stdin:
         reduce_list.append((group, value))
     else:
         if prev_group:
-            calculate_value_from_list(reduce_list)
+            calculate_value_from_list(reduce_list, prev_group)
         prev_group = group
         reduce_list = [(group, value)]
 
 
-calculate_value_from_list(reduce_list)
+calculate_value_from_list(reduce_list, prev_group)

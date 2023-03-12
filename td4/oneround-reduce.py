@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 
 
@@ -17,7 +18,10 @@ value_list = []
 prev_add_group = None
 
 for line in sys.stdin:
-    add_group, mul_group, value = line.rstrip().split('\t')
+    add_group = []
+    add_group1, add_group2, mul_group, value = line.rstrip().split(' ')
+    add_group.append(add_group1)
+    add_group.append(add_group2)
     #print(add_group, mul_group, value)
     mul_group, value = map(int, [mul_group, value])
     #print(mul_group, value)
