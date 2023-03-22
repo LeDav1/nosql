@@ -69,7 +69,7 @@ Run with
 ---
 Placer le dossier 'td4' folder dans hadoop-2.9.1 directory
 
-### Exercice 1 : *Word count*
+### <span style="color:#e06c75">Exercice 1 : *Word count*</span>
 
     bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input sujet-mapreduce-fichiers/input-word-count/ -output out -mapper td4/word-count-map.py -reducer td4/word-count-reduce.py
 
@@ -77,7 +77,7 @@ On peut vérifier que le résultat soit bon avec la commande:
 
     diff out/part-00000 sujet-mapreduce-fichiers/expected-outputs/word-count.txt
 
-### Exercice 2 : *Produit matriciel*
+### <span style="color:#e06c75">Exercice 2 : *Produit matriciel*</span>
 
 One round:
 
@@ -146,4 +146,42 @@ Output:
     3,3     21
     3,4     21
 
-### Exercice 3 : *Agrégats sur des données Twitter*
+### <span style="color:#e06c75">Exercice 3 : *Agrégats sur des données Twitter*</span>
+
+<span style="color:#61afef">Question 1:</span>
+
+Pour tester, on peut utiliser le script script-twitter1.sh
+
+mapper:
+
+Le mapper s'appelle twitter1-mapper.py
+Le mapper fonctionne comme celui de wordcount. Pour chaque ligne, on affiche le nom de la personne suivi et 1.
+
+reducer:
+
+Le reducer s'appelle twitter1-reduce.py.
+Comme pour le wordcount, tant qu'on est sur le même utilisateur, on compte le nombre de follower. Si l'utilisateur de la ligne est différent de celui d'avant, on affiche l'utilisateur d'avant et son nombre de follower.
+
+
+<span style="color:#61afef">Question 2:</span>
+
+Pour tester, on peut utiliser le script script-twitter2.sh
+
+mapper:
+
+Le mapper s'appelle twitter2-mapper.py
+Ce mapper est simplement l'identité, on affiche l'utilisateur et son nombre de followers.
+
+reducer:
+
+Le reducer s'appelle twitter2-reduce.py.
+Pour chaque ligne, on effectue 4 étapes:
+
+- étape 1: On incrémente de 1 un compteur qui compte le nombre de personne suivi.
+
+- étape 2: On incrémente par le nombre de follower de cet utilisateur un compteur qui compte le nombre de relation.
+
+- étape 3: On cherche à savoir si l'utilisateur a moins de followers que celui qui en a le moins actuellement. Si c'est le cas, on remplace min_user par celui-ci et min_followers par son nombre de followers.
+
+- étape 4: On cherche à savoir si l'utilisateur a plus de followers que celui qui en a le plus actuellement. Si c'est le cas, on remplace max_user par celui-ci et max_followers par son nombre de followers.
+
