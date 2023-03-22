@@ -7,33 +7,33 @@
 
 ## Exercice 1
 
-Get the dataset archive:
+Télécharger le dataset:
 ```wget https://snap.stanford.edu/data/higgs-social_network.edgelist.gz```
 
-extract the dataset:
+extraire le dataset:
 ```gunzip -d higgs-social_network.edgelist.gz```
 
-Open sqlite:
+Ouvrir sqlite:
 ```sqlite3```
 
-Open or create the database:
+Ouvrir ou creer la database:
 ```.open database.db```
 
-Change the separator:
+Changer le separator:
 ```.separator " "```
 
-Create the table:
+Creer la table:
 ```CREATE TABLE social_network(to_node TEXT, from_node TEXT);```
 
-Import the dataset in the table:
+Importer le dataset dans la table table:
 ```.import higgs-social_network.edgelist social_network```
 
-Start the exo1.sql script:
+Lancer exo1.sql script:
 ```.read exo1.sql```
 
 ## Exercice 2 : *SPARQL*
 
-### Each exercise has its own file n.sparql located in td3 dir
+### Chaque exercice a son propre fichier n.sparql situé dans le dossier td3
 
 1.(a) Expliquez le résultat de la requete suivante.
 
@@ -54,39 +54,68 @@ Cette requete compte le nombre de triplet ayant un type.
 
 Cette requete retourne les couples de personnes ayant un conjoint.
 
-- For questions 3 - 9 see the file 3-9.sparql in td3 dir
+- For questions 3 - 9 voir le fichier correspondant 3-9.sparql dans td3 dir
 
-- For question 8.b (cloture transitive) pipe the output of the query 8.a to a file  
+- For question 8.b (cloture transitive) il faut rédiriger la sortie de la requete 8.a dans un fichier puis lancer la requete 8.b avec ce fichier comme input.
 
     ```./sparql --data G --query 8-a.sparql > output.txt```
 
 Run with
 
-    ./sparql --data G --query Q
+    ./sparql --data output.txt --query Q
 
 ## Sujet 4
 
 ---
-Place 'td4' folder in hadoop-2.9.1 directory
+Placer le dossier 'td4' folder dans hadoop-2.9.1 directory
 
 ### Exercice 1 : *Word count*
 
     bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input sujet-mapreduce-fichiers/input-word-count/ -output out -mapper td4/word-count-map.py -reducer td4/word-count-reduce.py
 
-Comparing with Expected output:
+On peut vérifier que le résultat soit bon avec la commande:
 
     diff out/part-00000 sujet-mapreduce-fichiers/expected-outputs/word-count.txt
 
 ### Exercice 2 : *Produit matriciel*
 
 One round:
+
+Map:
+Pour M, on produit un nombre de couples égal au nombre de colonnes de N. Chaque couple est de la forme ((i, k), j, Mij) où i est le numéro de la ligne de M, j le numéro de la colonne de M, k est le un nombre entre 0 et le nombre de colonnes de N et Mij la valeur de l'élément.
+
+Pour N, on produit un nombre de couples égal au nombre de lignes de M. Chaque couple est de la forme ((i, k), j, N) où j est le numéro de la ligne de N, k le numéro de la colonne de N, i est le un nombre entre 0 et le nombre de lignes de M et Nkj la valeur de l'élément.
+
+Reduce:
+Chaque clé (i, k) est associée à une liste contenant toutes les valeurs (j, mij ) et (j, njk), pour toutes les valeurs possibles de j. Le but est de calculer le produit mij x njk pour chaque j. Pour cela, on
+relie les deux valeurs de la liste qui ont la même valeur de j, pour chaque j. Ensuite, ces produits sont additionnés par rapport à la clé (i, k).
+
+On peut le tester avec la commande:
   
     bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input sujet-mapreduce-fichiers/input-matmul/ -output out -mapper td4/oneround-map.py -reducer td4/oneround-reduce.py
 
 Two rounds:
-To test with hadoop, see the provided script 'scpt' file by placing it in the hadoop-2.9.1 directory
 
-scpt.sh
+Première étape Map:
+Pour chaque élément de la matrice M on produit un couple (j, (M, i, Mij)) où j est le numéro de la colonne de M, i le numéro de la ligne et Mij la valeur de l'élément et M le nom de la matrice 'M'.
+
+Concernant la matrice N, on produit un couple (j, (N, k, Nij)) où j est le numéro de la ligne de N, k le numéro de la colonne et Nij la valeur de l'élément et N le nom de la matrice 'N'.
+
+Premier étape Reduce:
+Le but est de faire une jointure sur les clés (j) et de calculer le produit des éléments de la matrice M et N ayant le même numéro de colonne et de ligne respectivement.
+
+Pour chaque clé j, on récupère les couples (M, i, Mij) et (N, k, Nij) et on produit Mij x Nij .On produit un couple(i, k, Mij* Nij) qui est le résultat de la multiplication de la ligne i de M et de la colonne k de N.
+
+Deuxième étape Map:
+La deuxième étape map est juste l'identité.
+
+Deuxième étape Reduce:
+Pour chaque clé (i, k) on somme les valeurs associées. Le résultat est ((i, k), v)) où v est la somme des valeurs associées à la clé (i, k).
+
+Pour tester avec hadoop, voir le script 'scpt'. Il faut placer le script td4/scpt dans le repertoire hadoop-2.9.1. Executer le script avec la commande:
+
+    ./scpt 
+scpt
 
     mkdir tworound 2> /dev/null  
     rm tworound/out1.txt 2> /dev/null  
@@ -98,7 +127,7 @@ scpt.sh
     bin/hadoop jar share/hadoop/tools/lib/hadoop-streaming-2.9.1.jar -input tworound/ -output out -mapper td4/tworound-map2.py -reducer td4/tworound-reduce2.py  
     cat out/*
 
-Or test it using sort and piping outputs
+On peut aussi tester avec la commande sort sous linux:
 
     cat sujet-mapreduce-fichiers/input-matmul/* | td4/tworound-map1.py | sort | td4/tworound-reduce1.py  | td4/tworound-map2.py  | sort | td4/tworound-reduce2.py
 
